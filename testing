@@ -18,8 +18,4 @@ login to the othe server from the host server by using the command below
 sudo ubuntu@"ip-address"  ## Note we dont have to specify the key-pairas
 
 
-<<<<<<< HEAD
-
-=======
-.....
->>>>>>> bb45370fe6828bd37fe603ae7cbd27696f7d5c7b
+......
