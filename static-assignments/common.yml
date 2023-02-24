@@ -1,5 +1,5 @@
 - name: update websever, nfs 
-  host: nfs, webserver
+  hosts: nfs, webserver
   remote_user: ubuntu
   become: yes
   become_user: root
