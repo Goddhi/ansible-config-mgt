@@ -1,27 +1,11 @@
-- name: update websever, nfs 
-  hosts: nfs, webserver
-  remote_user: ubuntu
+---
+- name: update web, nfs and db servers
+  hosts: webservers
+  remote_user: ec2-user
   become: yes
   become_user: root
-  tasks: 
+  tasks:
     - name: ensure wireshark is at the latest version
-      apt:
+      yum:
         name: wireshark
         state: latest
-
-    - name: create a directory
-      file:
-        path: /home/ubuntu/test
-        state: directory
-
-    - name: create a file
-      file:
-        path: /home/ubuntu/test/test.txt
-        state: touch
-
-    - name: change timezone
-      command: timedatectl set-timezone Africa/Lagos
-
-    - name: run a shell script
-      shell: |
-        echo "Hello World" > /home/ubuntu/test/test.txt

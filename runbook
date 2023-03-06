@@ -1,0 +1,4 @@
+Tetsing connectivity to the other VM
+
+ansible -i "inventory file" -m ping "name of host"
+in the inventory file specify the name of the host e.g [test] and the public ip address adress of the host VM and the VM user e.g 50.18.5.52 ansible_ssh_user='ec2-user'

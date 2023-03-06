@@ -1,0 +1,2 @@
+[test]
+52.8.38.207 ansible_ssh_user='ec2-user'
