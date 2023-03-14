@@ -1,4 +1,4 @@
-eval 'ssh-agent'
+eval 'ssh-agent' or eval `ssh-agent -s`
 
 
 output :
@@ -16,6 +16,7 @@ the key created by the ssh agent will be added over to the host server after the
 with the concept of ssh agent we can easily ssh into another server from the host server as far they are using the same key-pairs
 login to the othe server from the host server by using the command below
 sudo ubuntu@"ip-address"  ## Note we dont have to specify the key-pairas
+
 
 
 
